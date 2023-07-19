@@ -38,27 +38,3 @@ function generateAudio() {
     }
 }
 
-/**
- * Check system dark mode setting and update theme
- * Theme is updated by injecting CSS into the 'themeStyle' style tag
- */
-function updateTheme() {
-    var themeStyle = document.getElementById('themeStyle');
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        themeStyle.innerHTML += `
-            /* Dark Theme Styles */
-            body { background-color: #282c34; color: #f8f8f2; }
-            input, select, button { background-color: #44475a; color: #f8f8f2; border: none; }
-            #error { color: #ff5555; }
-        `;
-    } else {
-        themeStyle.innerHTML += `
-            /* Light Theme Styles */
-            body { background-color: #f8f8f2; color: #282c34; }
-            input, select, button { background-color: #f8f8f2; color: #282c34; border: none; }
-            #error { color: #ff5555; }
-        `;
-    }
-}
-updateTheme();
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme);
