@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio-Assisted Language Tool</title>
+</head>
+<body>
+    <!-- Input field for word -->
+    <input type="text" id="word" placeholder="Enter word here">
+    <!-- Language selection -->
+    <select id="language">
+        <option value="en_us">English</option>
+        <!-- Placeholder for future language options -->
+    </select>
+    <!-- Button to initiate audio generation -->
+    <button onclick="generateAudio()">Pronounce</button>
+    <!-- Checkbox for slow mode -->
+    <input type="checkbox" id="slow">Slow
+    <!-- Audio element for pronunciation playback -->
+    <audio id="audio" src="" type="audio/mp3">
+    <!-- Error message display -->
+    <p id="error" style="color:red;"></p>
+</body>
+</html>
