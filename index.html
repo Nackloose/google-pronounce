@@ -7,6 +7,12 @@
         body {
             font-family: Arial, sans-serif;
         }
+        h1 {
+
+        }
+        .row {
+            display: flex;
+        }
         #container {
             max-width: 800px;
             margin: 0 auto;
@@ -24,21 +30,24 @@
     </style>
 </head>
 <body>
-    <!-- Input field for word -->
-    <input type="text" id="word" placeholder="Enter word here">
-    <!-- Language selection -->
-    <select id="language">
-        <option value="en_us">English</option>
-        <!-- Placeholder for future language options -->
-    </select>
-    <!-- Button to initiate audio generation -->
-    <button onclick="generateAudio()">Pronounce</button>
-    <!-- Checkbox for slow mode -->
-    <input type="checkbox" id="slow">Slow
-    <!-- Audio element for pronunciation playback -->
-    <audio id="audio" src="" type="audio/mp3">
-    <!-- Error message display -->
-    <p id="error" style="color:red;"></p>
+   <h1><a href="https://github.com/Nackloose/google-pronounce/">google-pronounce</a></h1>
+    <div class="row">
+        <!-- Input field for word -->
+        <input type="text" id="word" placeholder="Enter word here">
+        <!-- Language selection -->
+        <select id="language">
+            <option value="en_us">English</option>
+            <!-- Placeholder for future language options -->
+        </select>
+        <!-- Button to initiate audio generation -->
+        <button onclick="generateAudio()">Pronounce</button>
+        <!-- Checkbox for slow mode -->
+        <input type="checkbox" id="slow">Slow
+        <!-- Audio element for pronunciation playback -->
+        <audio id="audio" src="" type="audio/mp3">
+        <!-- Error message display -->
+        <p id="error" style="color:red;"></p>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
