@@ -18,5 +18,3 @@ In case of errors (like non-existent audio files), an error message is presented
 ## Contributing
 
 Progression, it seems, is a constant. Every iteration brings us closer to the optimal solution. Contributions and suggestions are welcome. There is always room for improvement. Always.
-
-Place this README in your project's root directory. Now, your project clearly communicates its purpose, how it works, and its limitations. Additionally, it invites contributions, making it a living, growing entity.
