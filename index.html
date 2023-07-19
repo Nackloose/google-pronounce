@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Audio-Assisted Language Tool</title>
-    <style id="themeStyle">
-        /* Basic Styles */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-
-        }
-        .row {
-            display: flex;
-        }
-        #container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        input, select, button {
-            display: block;
-            margin: 10px 0;
-            padding: 5px;
-        }
-        /* Error Text Style */
-        #error {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>
-        <a href="https://github.com/Nackloose/google-pronounce/">google-pronounce</a>
-    </h1>
-    <hr/>
-    <h2>Disclaimer</h2>
-    <div class="row">
-        <small>This project serves as an experimental tool and is not endorsed or affiliated with Google.
-        Infact the opposite; reverse engineered from search sources. 
-        It operates under the assumption that Google has an audio file for every English word, which might not always be the case.
-        Therefore, occasional errors due to non-existent files should be expected.
-        Despite these limitations, the tool provides a simple, effective way to aid in language annuciation and conceptualization.</small>
-    </div>
-    <div class="row">
-        <!-- Error message display -->
-        <p id="error" style="color:red;"></p>
-    </div>
-    <div class="row">
-        <!-- Input field for word -->
-        <input type="text" id="word" placeholder="Enter word here">
-        <!-- Language selection -->
-        <select id="language">
-            <option value="en_us">English</option>
-            <!-- Placeholder for future language options -->
-        </select>
-        <!-- Button to initiate audio generation -->
-        <button onclick="generateAudio()">Pronounce</button>
-        <!-- Checkbox for slow mode -->
-        <div>
-            <input type="checkbox" id="slow">Slow 
+    <head>
+        <title>Audio-Assisted Language Tool</title>
+        <style id="themeStyle">
+            /* Basic Styles */
+            body {
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+    
+            }
+            .row {
+                display: flex;
+            }
+            #container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            input, select, button {
+                display: block;
+                margin: 10px 0;
+                padding: 5px;
+            }
+            /* Error Text Style */
+            #error {
+                margin-top: 10px;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>
+            <a href="https://github.com/Nackloose/google-pronounce/">google-pronounce</a>
+        </h1>
+        <hr>
+        <h2>Disclaimer</h2>
+        <div class="row">
+            <small>This project serves as an experimental tool and is not endorsed or affiliated with Google.
+            Infact the opposite; reverse engineered from search sources. 
+            It operates under the assumption that Google has an audio file for every English word, which might not always be the case.
+            Therefore, occasional errors due to non-existent files should be expected.
+            Despite these limitations, the tool provides a simple, effective way to aid in language annuciation and conceptualization.</small>
         </div>
-        <!-- Audio element for pronunciation playback -->
-        <audio id="audio" src="" type="audio/mp3">
-    </div>
-    <script type="text/javascript" src="script.js"></script>
-</body>
+        <div class="row">
+            <!-- Error message display -->
+            <p id="error" style="color:red;"></p>
+        </div>
+        <div class="row">
+            <!-- Input field for word -->
+            <input type="text" id="word" placeholder="Enter word here">
+            <!-- Language selection -->
+            <select id="language">
+                <option value="en_us">English</option>
+                <!-- Placeholder for future language options -->
+            </select>
+            <!-- Checkbox for slow mode -->
+            <div style="display: flex;width: 72px;align-items: center;place-content: center;">
+                <input type="checkbox" id="slow" style="margin-right: 4px;">Slow 
+            </div>
+            <!-- Button to initiate audio generation -->
+            <button onclick="generateAudio()">Pronounce</button>
+            <!-- Audio element for pronunciation playback -->
+            <audio id="audio" src="" type="audio/mp3"></audio>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>
