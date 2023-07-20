@@ -16,7 +16,7 @@ document.getElementById('word').addEventListener('keypress', function(event) {
  */
 function generateAudio() {
     // Fetching user input and page elements
-    var word = document.getElementById('word').value;
+    var word = document.getElementById('word').value.toLowerCase();
     var audio = document.getElementById('audio');
     var isSlow = document.getElementById('slow').checked;
     var language = document.getElementById('language').value;
